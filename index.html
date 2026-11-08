@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida - Campaña Ambiental</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="imagenes/icono-192.png">
+    <meta name="theme-color" content="#2f75b5">
+</head>
+<body>
+    <header>
+        <h1>Campaña Escolar EcoVida</h1>
+        <p>Cuidar nuestro ambiente es tarea de todos. Sumate al cambio desde la escuela</P>
+    </header>
+
+    <main>
+        <section class="banner-sec">
+            <img src="imagenes/banner.webp" alt="Bosque verde representando la naturaleza protegida por la campaña" width="800" height="450">
+        </section>
+
+        <section class="consejos">
+            <h2>Tres consejos clave para cuidar el ambiente</h2>
+            <article>
+                <H3>1. Reducir el uso de plásticos</h3>
+                <p>Evita los plásticos de un solo uso utilizando botellas reutilizables y bolsas de tela.</p>
+                <img src="imagenes/consejo1.webp" alt="Manos plantando un brote verde en la tierra" width="400" height="300" loading="lazy">
+            </article>
+            <Article>
+                <h3>2. Ahorrar energía</h3>
+                <p>Apaga las luces y desconectá los aparatos electronicos que no estés utilizando.</p>
+            </article>
+            <article>
+                <h3>3. Separar los residuos</h3>
+                <p>Clasificá la basura en organicos e inorgánicos para facilitar el reciclaje en la institución.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campaña EcoVida - Escuela Ing. Pablo Nogués</p>
+    </footer>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js")
+                .then(() => console.log("Service Worker registrado con éxito."))
+                .catch((err) => console.log("Falla en el registro del Service Worker:", err));
+        }
+    </script>
+</body>
+</html>
